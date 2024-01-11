@@ -21,7 +21,7 @@
       referrerpolicy="no-referrer"
     />
 
-
+    <!-- BOX ICONS -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <!-- CSS -->
@@ -34,8 +34,6 @@
     <section class="content">
       <h1>Pokedex</h1>
 
-      <ol id="pokemonList" class="pokemons"></ol>
-     
       <section class="pokemonDetails">
         
         <div class="detail-pokemon" >
@@ -47,9 +45,7 @@
 
           <div class="detail-page">
 
-            <ol class="detail-types">   
-              <li class="detail-type1"></li>
-              <li class="detail-type2"></li>      
+            <ol class="detail-types">      
             </ol>
 
             <img class="detail-photo" src=""   alt="">
@@ -77,12 +73,16 @@
     
       </section>
 
+      <ol id="pokemonList" class="pokemons"></ol>
+
 
 
 
       <div class="pagination">
         <button id="loadMore" type="button">Load More</button>
       </div>
+
+      <div class="scrollToTop"><i class='bx bx-up-arrow-circle'></i></div>
     </section>
 
     <script src="./assets/js/pokemon-model.js"></script>

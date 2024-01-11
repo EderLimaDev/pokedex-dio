@@ -4,6 +4,7 @@
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
 }
+
 .body {
     background-color: #f6f8fc;
 }
@@ -13,6 +14,16 @@
   background-color: #fff;
   height: 100vh;
   width: 100vw;
+}
+
+.scrollToTop {
+  font-size: 3rem;
+  position: fixed;
+  z-index: 10;
+  bottom: 0;
+  right: 15px;
+  color: black;
+  display: none;
 }
 
 @media screen and (min-width: 992px){
