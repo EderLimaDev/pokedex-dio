@@ -1,57 +1,62 @@
 .pokemonDetails {
     position: absolute;
     z-index: 3;
-    top:20%;
-    background-color: #fff;
-    width: 500px;
-    height: 300px;
+    top:10%;
+    padding: 2rem;
+    background-color: #000;
+    display: none;
+    width: 600px;
+    height: 800px;
 }
 
-
-
-.return-btn {
-    position: absolute;
-    width: 80px;
-    color: white;
+.open {
+    display: block;
 }
 
-
-/* 
 ol {
     list-style: none;
 }
 
-.content {
-    width: 100vw;
-    height: 100vh;
-    padding: 1rem;
-    background-color: #fff;
-}
 
-*/
+/* ABA DETAILS POKEMON */
+
 .detail-pokemon {
     display: flex;
     flex-direction: column;
+    margin: 0.5rem;
+    padding-top: 0.5rem;
+    color: #fff;
+    border-radius: 1rem;
 }
-
 
 .detail-pokemon .detailNumber {
+    font-size: 1rem;
+    color: black;
     text-align: right;
+    opacity: 0.3;
+    padding: 0 1rem;
 }
+
 .detail-pokemon .detailName {
-    font-size: 1.5rem;
+    text-transform: capitalize;
+    color: #fff;
+    margin-bottom: 0;
+    font-size: 1.8rem;
+    padding: 0 1rem;
 }
 
 .detail-page {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 1rem;
 }
 
 .detail-page .detail-types {
     display: flex;
     align-self: flex-start;
     padding: 0;
+
 }
 
 .detail-page .detail-types li {
@@ -59,31 +64,48 @@ ol {
     padding: 0 15px;
     margin-right: 15px;
     border-radius: 12px;
+    
 }
-/*
+
+.detail-photo {
+    width: 35%;
+}
+
+
+/* ABOUT SECTION */
+
 
 .aboutPokemon {
     padding: 5% 20px;
-    display: none;
+    background-color: #fff;
+    color: #000;
+    border-radius: 1rem;
+    
 }
+
 .aboutPokemon h2 {
     display: inline;
-    border-bottom: 1px solid black;
+
 }
+
 .aboutPokemon ol {
     display: flex;
     flex-direction: column;
     padding: 0;
     
 }
+
 .aboutPokemon ol li {
     display: flex;
     align-items: center;
     
 }
+
 .aboutPokemon p {
     flex: 1;
+    color: #312f2f9f;
 }
+
 .aboutPokemon ol span {
     flex: 1;
     vertical-align: center;
@@ -91,14 +113,10 @@ ol {
     
 }
 
-@media screen and (min-width: 992px) {
-    .content {
-        max-width: 992px;
-        height: auto;
-        margin: 1rem auto;
-        border-radius: 1rem;
-        width: 40vw;
-    }
 
+.return-btn {
+    padding-left: 0.5rem;
+    font-size: 1.6rem;
+    color: #fff;
+}
 
-} */

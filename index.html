@@ -21,6 +21,9 @@
       referrerpolicy="no-referrer"
     />
 
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/global.css" />
     <link rel="stylesheet" href="./assets/css/pokedex.css" />
@@ -34,18 +37,22 @@
       <ol id="pokemonList" class="pokemons"></ol>
      
       <div class="pokemonDetails">
+        
         <li class="detail-pokemon" id="pokemon" >
           
-          <span class="detailNumber">#</span>
+          <a class="return-btn" href="#"><i class='bx bx-left-arrow-circle'></i></a>
+          
+          <span class="detailNumber"></span>
           <span class="detailName"></span>
 
           <div class="detail-page">
-              <ol class="detail-types">   
-                <li class="detail-type1"></li>
-                <li class="detail-type2"></li>      
-              </ol>
 
-              <img class="detail-photo" src=""   alt="">
+            <ol class="detail-types">   
+              <li class="detail-type1"></li>
+              <li class="detail-type2"></li>      
+            </ol>
+
+            <img class="detail-photo" src=""   alt="">
           </div>
 
           <div class="aboutPokemon">
@@ -61,10 +68,7 @@
               </li>
               <li>
                 <p>Abilities</p>
-                <ol>
-                  <li class="pokemon-ability1"></li>
-                  <li class="pokemon-ability2"></li>
-                </ol>
+                <span class="pokemon-ability"></span>            
               </li>
             </ol>
           </div>
@@ -72,6 +76,10 @@
         </li> 
     
       </div>
+
+
+
+
       <div class="pagination">
         <button id="loadMore" type="button">Load More</button>
       </div>

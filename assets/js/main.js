@@ -1,5 +1,6 @@
 const pokemonList = document.getElementById("pokemonList");
 const loadMoreBtn = document.getElementById("loadMore");
+const returnBtn = document.querySelector('.return-btn')
 const pokemonDetailsPage = document.querySelector('.pokemonDetails');
 
 
@@ -37,9 +38,9 @@ function loadDetailsPage(id) {
     
     const types = pokemon.types.map((typeSlot) => typeSlot.type.name)
     const photo = pokemon.sprites.other.dream_world.front_default
+    const ability = pokemon.abilities.map((abilityMove) => abilityMove.ability.name)
 
-
-    document.querySelector('.detailNumber').innerHTML = id
+    document.querySelector('.detailNumber').innerHTML = `#${id}`
     document.querySelector('.detailName').innerHTML = name
     
     document.querySelector('.detail-type1').innerHTML = types[0]
@@ -50,20 +51,22 @@ function loadDetailsPage(id) {
 
     document.querySelector('.detail-pokemon').classList.add(types[0]) 
 
-    document.querySelector('.pokemon-height').innerHTML = height
+    document.querySelector('.pokemon-height').innerHTML = `${height} ft`
     document.querySelector('.pokemon-weight').innerHTML = `${weight} lbs`
 
-    document.querySelector('.pokemon-ability1').innerHTML = name
-    document.querySelector('.pokemon-ability2').innerHTML = name
+    document.querySelector('.pokemon-ability').innerHTML = ability.join(', ')
 
+    pokemonDetailsPage.classList.add('open')
 
-
-    console.log(id, name, height, types);
  })
 
 
 
 };
+
+returnBtn.addEventListener("click", ()=> {
+    pokemonDetailsPage.classList.remove('open');
+})
 
 
 
